@@ -59,7 +59,7 @@
             android:layout_margin="10dp"
             android:layout_gravity="left"
             android:background="@drawable/microphone"
-            android:backgroundTint="@color/red" />
+            android:backgroundTint="@color/blue" />
 
 
         <TextView

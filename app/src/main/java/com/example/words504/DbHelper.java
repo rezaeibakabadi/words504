@@ -1,7 +1,5 @@
 package com.example.words504;
 
-
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -23,7 +21,6 @@ public class DbHelper extends SQLiteOpenHelper {
         dbpath = context.getApplicationInfo().dataDir + "/databases/";
     }
 
-    @SuppressLint("NewApi")
     public DbHelper(Context context, String name, int version, SQLiteDatabase.OpenParams openParams) {
         super(context, name, version, openParams);
     }

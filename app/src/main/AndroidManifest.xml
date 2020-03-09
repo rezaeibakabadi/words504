@@ -13,9 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListVeiw_Activity"></activity>
+        <activity android:name=".ListVeiw_Activity" />
         <activity android:name=".Main22Activity" />
-        <activity android:name=".Main2Activity" />
+        <activity android:name=".Main23Activity" />
         <activity android:name=".Main1Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

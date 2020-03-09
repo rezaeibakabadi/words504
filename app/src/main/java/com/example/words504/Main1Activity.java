@@ -13,6 +13,7 @@ public class Main1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main1);
         Handler handler=new Handler();
+        Intent intent;
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -21,5 +22,7 @@ public class Main1Activity extends AppCompatActivity {
                 finish();
             }
         },3500);
+
+
     }
 }

@@ -40,7 +40,7 @@ public class FairbaseMessage {
     }
 
     private void sendNotification(String title,String messageBody) {
-        Intent intent = new Intent(this, Main2Activity.class);
+        Intent intent = new Intent(this, Main22Activity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent,
                 PendingIntent.FLAG_ONE_SHOT);

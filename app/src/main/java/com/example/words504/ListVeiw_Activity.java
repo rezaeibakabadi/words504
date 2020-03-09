@@ -1,27 +1,23 @@
 package com.example.words504;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.SeekBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.res.ResourcesCompat;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ListVeiw_Activity extends AppCompatActivity {
-    public static List<Wordclass> ssss = new ArrayList<>();
     boolean doubleclick = false;
-    MyApplication myApplication;
+    public static List<Wordclass> ssss = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,10 +26,8 @@ public class ListVeiw_Activity extends AppCompatActivity {
         ArrayList<String> Namelist = new ArrayList<>();
         ListView listView = findViewById(R.id.list);
         for (int i = 1; i < 43; i++) {
-            String reza = "Lesson" + i;
+            String reza = "lesson" + i;
             Namelist.add(reza);
-
-
         }
         ArrayAdapter<String> myaddapter = new ArrayAdapter<String>(this, R.layout.activity_main, R.id.texttt, Namelist);
         listView.setAdapter(myaddapter);
@@ -44,7 +38,7 @@ public class ListVeiw_Activity extends AppCompatActivity {
 
 
                 ssss = sqlitClass.lesson(position * 12);
-                Intent intent = new Intent(ListVeiw_Activity.this, Main2Activity.class);
+                Intent intent = new Intent(ListVeiw_Activity.this, Main23Activity.class);
                 startActivity(intent);
 
 
@@ -52,7 +46,6 @@ public class ListVeiw_Activity extends AppCompatActivity {
         });
 
     }
-
     @Override
     public void onBackPressed() {
 
@@ -60,7 +53,7 @@ public class ListVeiw_Activity extends AppCompatActivity {
             super.onBackPressed();
         }
         doubleclick = true;
-        Toast.makeText(this, "روی دکمه خروج کلیک کنید", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "برای خروج دوباره کلیک کنید", Toast.LENGTH_SHORT).show();
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
@@ -68,8 +61,6 @@ public class ListVeiw_Activity extends AppCompatActivity {
                 doubleclick = false;
             }
         }, 2500);
-
-        myApplication = MyApplication.getInstance();
     }
 
 }

@@ -1,6 +1,5 @@
 package com.example.words504;
 
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,11 +9,11 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class ProadapterActivity extends BaseAdapter {
+public class Proadapter extends BaseAdapter {
     List<Wordclass> arraylist;
     Context context;
 
-    public ProadapterActivity(List<Wordclass> items, Context context) {
+    public Proadapter(List<Wordclass> items, Context context) {
         this.context = context;
         this.arraylist = items;
     }

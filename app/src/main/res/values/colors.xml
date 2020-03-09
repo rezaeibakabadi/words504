@@ -6,9 +6,11 @@
     <color name="darkblue">#990A0C42</color>
     <color name="banafsh">#9C27B0</color>
     <color name="yellow">#FFC107</color>
-    <color name="orange">#FF5722</color>
+    <color name="orange">#f98444</color>
     <color name="blue">#11C0D8</color>
     <color name="red">#D81111</color>
     <color name="white">#F8F7F7</color>
-    <color name="transparent">#00070707</color>
+    <color name="reza">#19a7c5</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="notification_icon_color" >#01AEEA</color>
 </resources>

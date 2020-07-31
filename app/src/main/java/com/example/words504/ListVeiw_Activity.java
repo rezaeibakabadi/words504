@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListVeiw_Activity extends AppCompatActivity {
-    boolean doubleclick = false;
+
     public static List<Wordclass> ssss = new ArrayList<>();
 
     @Override
@@ -46,21 +46,6 @@ public class ListVeiw_Activity extends AppCompatActivity {
         });
 
     }
-    @Override
-    public void onBackPressed() {
 
-        if (doubleclick == true) {
-            super.onBackPressed();
-        }
-        doubleclick = true;
-        Toast.makeText(this, "برای خروج دوباره کلیک کنید", Toast.LENGTH_SHORT).show();
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                doubleclick = false;
-            }
-        }, 2500);
-    }
 
 }

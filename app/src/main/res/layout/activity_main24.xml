@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/darkblue"
     android:layout_height="match_parent"
     tools:context=".Main24Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:gravity="right"
-        android:layout_marginTop="20dp"
-        android:paddingTop="30dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="35dp"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints">
 
+        <Button
+            android:layout_width="245dp"
+            android:text="لغات"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="26dp"
+            android:id="@+id/words"
+            android:layout_marginBottom="24dp"
+            android:layout_height="65dp" />
+        <Button
+            android:layout_width="245dp"
+            android:text="منابع"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/source"
+            android:textSize="26dp"
+            android:layout_height="65dp" />
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
